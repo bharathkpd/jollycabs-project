@@ -2570,11 +2570,11 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.5px !important;
     margin: 0 !important;
   }
-
   /* Hide bulky details that look like e-commerce catalog blocks */
   .features-row,
   .car-divider,
-  .car-ideal-container {
+  .car-ideal-container,
+  .car-extra-info {
     display: none !important;
   }
 
@@ -2609,6 +2609,27 @@ h1, h2, h3, h4, h5, h6 {
   .car-card .btn-primary i {
     font-size: 10px !important;
     margin: 0 !important;
+  }
+
+  /* Outstation How It Works horizontal scroll on mobile */
+  .how-it-works-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 16px !important;
+    padding: 10px 4px 20px 4px !important;
+    scrollbar-width: none !important; /* Hide scrollbar for clean look */
+    width: 100% !important;
+  }
+  .how-it-works-grid::-webkit-scrollbar {
+    display: none !important;
+  }
+  .work-step-card {
+    flex: 0 0 250px !important; /* Fixed width for each step card */
+    scroll-snap-align: start !important;
+    text-align: center !important;
   }
 
 }
