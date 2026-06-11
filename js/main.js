@@ -232,6 +232,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const dropInput = document.getElementById('bookingDrop');
       const dateInput = document.getElementById('bookingDate');
       const timeInput = document.getElementById('bookingTime');
+      const tripTypeInput = document.getElementById('bookingTripType');
+      const carInput = document.getElementById('bookingCar');
+      const passengersInput = document.getElementById('bookingPassengers');
+      const requestsInput = document.getElementById('bookingRequests');
 
       const isNameValid = validateField(nameInput, nameInput.value.trim() !== '', 'Full Name is required.');
       const isMobileValid = validateField(mobileInput, indianMobileRegex.test(mobileInput.value.trim()), 'Enter a valid 10-digit Indian mobile number.');
@@ -241,6 +245,29 @@ document.addEventListener('DOMContentLoaded', () => {
       const isTimeValid = validateField(timeInput, timeInput.value.trim() !== '', 'Pickup Time is required.');
 
       if (isNameValid && isMobileValid && isPickupValid && isDropValid && isDateValid && isTimeValid) {
+        // Prepare WhatsApp message text
+        const nameVal = nameInput.value.trim();
+        const mobileVal = mobileInput.value.trim();
+        const pickupVal = pickupInput.value.trim();
+        const dropVal = dropInput.value.trim();
+        const dateVal = dateInput.value.trim();
+        const timeVal = timeInput.value.trim();
+        const tripTypeVal = tripTypeInput ? tripTypeInput.value : '';
+        const carVal = carInput ? carInput.value : '';
+        const passengersVal = passengersInput ? passengersInput.value.trim() : '1';
+        const requestsVal = requestsInput ? requestsInput.value.trim() : '';
+
+        let waText = `Hi Jolly Cabs, I want to book a cab / get a quote:\n\n*Name:* ${nameVal}\n*Mobile:* ${mobileVal}\n*Pickup:* ${pickupVal}\n*Drop:* ${dropVal}\n*Date:* ${dateVal}\n*Time:* ${timeVal}`;
+        if (tripTypeVal) waText += `\n*Trip Type:* ${tripTypeVal}`;
+        if (carVal) waText += `\n*Preferred Car:* ${carVal}`;
+        if (passengersVal) waText += `\n*Passengers:* ${passengersVal}`;
+        if (requestsVal) waText += `\n*Special Requests:* ${requestsVal}`;
+
+        const waUrl = `https://wa.me/917981232371?text=${encodeURIComponent(waText)}`;
+        
+        // Open WhatsApp in a new tab
+        window.open(waUrl, '_blank');
+
         // Hide form and show success message card
         bookingForm.style.display = 'none';
         const successCard = document.getElementById('bookingSuccessCard');
