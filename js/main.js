@@ -186,11 +186,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const nameInput = document.getElementById('contactName');
       const mobileInput = document.getElementById('contactMobile');
+      const emailInput = document.getElementById('contactEmail');
+      const serviceInput = document.getElementById('contactService');
+      const messageInput = document.getElementById('contactMessage');
       
       const isNameValid = validateField(nameInput, nameInput.value.trim() !== '', 'Full Name is required.');
       const isMobileValid = validateField(mobileInput, indianMobileRegex.test(mobileInput.value.trim()), 'Enter a valid 10-digit Indian mobile number.');
 
       if (isNameValid && isMobileValid) {
+        // Prepare WhatsApp message text
+        const nameVal = nameInput.value.trim();
+        const mobileVal = mobileInput.value.trim();
+        const emailVal = emailInput ? emailInput.value.trim() : '';
+        const serviceVal = serviceInput ? serviceInput.value : '';
+        const messageVal = messageInput ? messageInput.value.trim() : '';
+
+        let waText = `Hi Jolly Cabs, I have an inquiry:\n\n*Name:* ${nameVal}\n*Mobile:* ${mobileVal}`;
+        if (emailVal) waText += `\n*Email:* ${emailVal}`;
+        if (serviceVal) waText += `\n*Service:* ${serviceVal}`;
+        if (messageVal) waText += `\n*Message:* ${messageVal}`;
+
+        const waUrl = `https://wa.me/917981232371?text=${encodeURIComponent(waText)}`;
+        
+        // Open WhatsApp in a new tab
+        window.open(waUrl, '_blank');
+
         // Hide form and show success message card
         contactForm.style.display = 'none';
         const successCard = document.getElementById('contactSuccessCard');
