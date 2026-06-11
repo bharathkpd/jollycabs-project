@@ -2151,8 +2151,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   21. GLOBAL MOBILE LAYOUT FOR BOTH MOBILE & DESKTOP
+   20. DESKTOP NAVBAR CENTERING (OVERSIZE)
    ========================================================================== */
+@media (min-width: 992px) {
+  .navbar .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+/* ==========================================================================
+   21. RESPONSIVE MEDIA QUERIES (TABLET & MOBILE)
+   ========================================================================== */
+@media (max-width: 991px) {
 
 /* Force container width to be narrow and centered on all screens to mimic mobile view */
 .container {
@@ -2407,4 +2428,187 @@ h1, h2, h3, h4, h5, h6 {
 
 .internal-hero-subtext {
   font-size: 15px !important;
+}
+
+
+  /* MOBILE NAVBAR & RIDESHARE LAYOUT REFINEMENTS */
+  /* Compact Navbar Height & Spacing */
+  .navbar {
+    padding: 0 12px !important;
+    height: 60px !important;
+  }
+  
+  .navbar .container {
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+  
+  .nav-logo {
+    gap: 6px !important;
+  }
+  
+  .nav-logo-circle {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 14px !important;
+  }
+  
+  .nav-logo-text {
+    font-size: 15px !important;
+  }
+  
+  /* Align Book button and Hamburger menu to the far right with space in middle */
+  .navbar .btn-primary.btn-small {
+    margin-left: auto !important; /* Pushes the button and hamburger to the right */
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    font-size: 0 !important; /* Hide original text */
+    white-space: nowrap !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+  }
+  
+  .navbar .btn-primary.btn-small::after {
+    content: "Book / Quote" !important;
+    font-size: 11px !important;
+    color: var(--primary-dark) !important;
+  }
+  
+  .nav-hamburger {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 18px !important;
+    margin: 0 !important;
+    display: flex !important;
+  }
+
+  /* TAXICAB FLAT LIST ROWS (NON-ECOMMERCE LOOK) */
+  .car-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid var(--border-light) !important;
+    background: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    gap: 12px !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+
+  .car-card:last-child {
+    border-bottom: none !important;
+  }
+
+  .car-img-wrapper {
+    width: 95px !important;
+    height: 70px !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+  }
+
+  .car-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Grid layout inside body: Details left, Pill button right */
+  .car-card-body {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    grid-template-rows: auto auto !important;
+    gap: 2px 12px !important;
+    flex-grow: 1 !important;
+    padding: 0 !important;
+    align-items: center !important;
+  }
+
+  .car-card-header {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .car-name {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: var(--text-dark) !important;
+    margin: 0 !important;
+  }
+
+  .seats-badge {
+    font-size: 9px !important;
+    padding: 1px 6px !important;
+    background-color: var(--primary-dark) !important;
+    color: #FFFFFF !important;
+    border-radius: 3px !important;
+    font-family: var(--font-body) !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+  }
+
+  .car-type-label {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    font-size: 11px !important;
+    color: var(--accent-gold) !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 !important;
+  }
+
+  /* Hide bulky details that look like e-commerce catalog blocks */
+  .features-row,
+  .car-divider,
+  .car-ideal-container {
+    display: none !important;
+  }
+
+  /* Pill button on the right side of the row */
+  .car-card .btn-primary {
+    grid-column: 2 !important;
+    grid-row: 1 / span 2 !important;
+    padding: 6px 12px !important;
+    font-size: 0 !important; /* Hide original long text */
+    font-weight: 700 !important;
+    border-radius: 20px !important;
+    background-color: var(--accent-gold) !important;
+    color: var(--primary-dark) !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    width: auto !important;
+    margin: 0 !important;
+    border: none !important;
+    justify-self: end !important;
+    box-shadow: none !important;
+  }
+
+  .car-card .btn-primary::after {
+    content: "Book" !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: var(--primary-dark) !important;
+  }
+
+  .car-card .btn-primary i {
+    font-size: 10px !important;
+    margin: 0 !important;
+  }
+
 }

@@ -141,6 +141,16 @@ document.addEventListener('DOMContentLoaded', () => {
       pagination: {
         el: '.swiper-pagination',
         clickable: true
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
       }
     });
   }
