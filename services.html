@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Explore cab services by Jolly Cabs in Hyderabad. We offer local city rides, airport pickups and drops, wedding car rentals, corporate travel, and outstation tours.">
+  <meta name="keywords" content="airport cab hyderabad, outstation taxi, local car rental, wedding car hire hyderabad, corporate travel, jolly cabs services">
+  <title>Our Cab Services in Hyderabad | Jolly Cabs</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=1.2">
+  
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-circle">JC</div>
+        <span class="nav-logo-text">Jolly Cabs</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
+        <li><a href="fleet.html" class="nav-link">Fleet</a></li>
+        <li><a href="outstation.html" class="nav-link">Outstation</a></li>
+        <li><a href="airport.html" class="nav-link">Airport</a></li>
+        <li><a href="srisailam.html" class="nav-link">Srisailam</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="booking.html" class="btn btn-primary btn-small">Book / Get Quote</a>
+      <button class="nav-hamburger" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer">
+    <button class="mobile-nav-close" aria-label="Close Navigation"><i class="fa-solid fa-xmark"></i></button>
+    <div class="mobile-nav-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="services.html" class="mobile-nav-link active">Services</a>
+      <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+      <a href="outstation.html" class="mobile-nav-link">Outstation</a>
+      <a href="airport.html" class="mobile-nav-link">Airport</a>
+      <a href="srisailam.html" class="mobile-nav-link">Srisailam</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="booking.html" class="btn btn-primary mobile-nav-btn">Book / Get Quote</a>
+    </div>
+  </div>
+  <div class="drawer-overlay"></div>
+
+  <!-- Hero Banner -->
+  <section class="internal-hero hero-default">
+    <div class="internal-hero-overlay"></div>
+    <div class="container">
+      <div class="internal-hero-content" data-aos="fade-up">
+        <h1 class="internal-hero-title">Our Services</h1>
+        <p class="internal-hero-subtext">Comprehensive and professional travel solutions across Hyderabad and beyond.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-down" style="transform: rotate(-90deg); font-size: 10px;"></i>
+          <span>Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid Section -->
+  <section class="section-padding bg-light-section">
+    <div class="container">
+      <p class="services-intro" data-aos="fade-up">
+        Whether you need a quick ride across town, a reliable transfer to Rajiv Gandhi International Airport, or a spacious car for a family outstation trip, Jolly Cabs provides clean, well-maintained vehicles driven by verified professional chauffeurs.
+      </p>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon-bg">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3 class="service-title">Airport Transfer</h3>
+          <p class="service-text">Reliable, on-time pickup and drop to Rajiv Gandhi International Airport (RGIA). Flight tracking ensures we are always ready when you land, with dedicated driver assistance for handling airport-sized luggage.</p>
+          <a href="airport.html" class="service-link">View Pricing & Details<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon-bg">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <h3 class="service-title">Outstation Trips</h3>
+          <p class="service-text">One-way and round-trip cab service from Hyderabad to destinations across Telangana, Andhra Pradesh, and neighboring states. Enjoy flat per-kilometer pricing and custom itinerary stops.</p>
+          <a href="outstation.html" class="service-link">View Outstation Pricing<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon-bg">
+            <i class="fa-solid fa-rings-wedding"></i>
+          </div>
+          <h3 class="service-title">Wedding Cabs</h3>
+          <p class="service-text">Make your wedding day or ceremony run smoothly. We offer premium MPVs and luxury sedans with background-verified, well-dressed drivers to escort guests and wedding parties comfortably.</p>
+          <a href="booking.html" class="service-link">Book Wedding Cab<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-icon-bg">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3 class="service-title">Corporate Travel</h3>
+          <p class="service-text">Punctual and corporate-class travel services for business clients, employees, and VIP guests. Monthly billing cycles, dedicated account managers, and clean vehicles for meetings.</p>
+          <a href="booking.html" class="service-link">Inquire Corporate Plan<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon-bg">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+          <h3 class="service-title">Tour Packages</h3>
+          <p class="service-text">Curated travel itineraries to popular sightseeing destinations. Take advantage of custom cab packages to Srisailam, Nagarjunasagar, Tirupati, and other heritage hotspots from Hyderabad.</p>
+          <a href="srisailam.html" class="service-link">Explore Tour Packages<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon-bg">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="service-title">24 / 7 City Rides</h3>
+          <p class="service-text">Reliable, around-the-clock point-to-point transportation within Hyderabad. Whether it is a business visit in HITEC City or shopping in Kukatpally, our drivers get you there safely.</p>
+          <a href="booking.html" class="service-link">Book City Ride<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- CTA Box -->
+      <div class="services-cta-box" data-aos="fade-up">
+        <div class="services-cta-box-text">
+          <h3>Need a Custom Service Package?</h3>
+          <p>Contact our support team to get tailor-made solutions for group bookings, tours, or long-term contracts.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div class="footer-brand">
+          <div class="nav-logo footer-logo">
+            <div class="nav-logo-circle">JC</div>
+            <span class="nav-logo-text">Jolly Cabs</span>
+          </div>
+          <p class="footer-brand-text">Ride with confidence. Ride with Jolly Cabs.</p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="fleet.html" class="footer-link">Fleet</a></li>
+            <li><a href="outstation.html" class="footer-link">Outstation</a></li>
+            <li><a href="airport.html" class="footer-link">Airport Transfer</a></li>
+            <li><a href="srisailam.html" class="footer-link">Srisailam Tour</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="airport.html" class="footer-link">Airport Transfer</a></li>
+            <li><a href="outstation.html" class="footer-link">Outstation Trips</a></li>
+            <li><a href="services.html" class="footer-link">Wedding Cabs</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Travel</a></li>
+            <li><a href="services.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="services.html" class="footer-link">City Rides</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Kukatpally, Hyderabad — 500072</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+917981232371">+91 7981232371</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@jollycabs.in">info@jollycabs.in</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Available 24 / 7 — All days</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span class="footer-copy">Copyright 2024 Jolly Cabs. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="contact.html" class="footer-bottom-link">Privacy Policy</a>
+          <span class="footer-copy">|</span>
+          <a href="contact.html" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917981232371?text=Hi%20Jolly%20Cabs%2C%20I%20want%20to%20book%20a%20cab" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+  <script src="js/main.js?v=1.2"></script>
+</body>
+</html>

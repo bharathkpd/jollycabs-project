@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Contact Jolly Cabs in Kukatpally, Hyderabad. Reach us at 7981232371 or email info@jollycabs.in. Available 24/7 for booking. Send us a message.">
+  <meta name="keywords" content="contact jolly cabs, jolly cabs address, cab phone number hyderabad, book taxi contact, kukatpally cab office">
+  <title>Contact Us | Jolly Cabs Hyderabad | Get a Cab Quote</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=1.2">
+  
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-circle">JC</div>
+        <span class="nav-logo-text">Jolly Cabs</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="fleet.html" class="nav-link">Fleet</a></li>
+        <li><a href="outstation.html" class="nav-link">Outstation</a></li>
+        <li><a href="airport.html" class="nav-link">Airport</a></li>
+        <li><a href="srisailam.html" class="nav-link">Srisailam</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <a href="booking.html" class="btn btn-primary btn-small">Book / Get Quote</a>
+      <button class="nav-hamburger" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer">
+    <button class="mobile-nav-close" aria-label="Close Navigation"><i class="fa-solid fa-xmark"></i></button>
+    <div class="mobile-nav-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+      <a href="outstation.html" class="mobile-nav-link">Outstation</a>
+      <a href="airport.html" class="mobile-nav-link">Airport</a>
+      <a href="srisailam.html" class="mobile-nav-link">Srisailam</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact</a>
+      <a href="booking.html" class="btn btn-primary mobile-nav-btn">Book / Get Quote</a>
+    </div>
+  </div>
+  <div class="drawer-overlay"></div>
+
+  <!-- Hero Banner -->
+  <section class="internal-hero hero-small">
+    <div class="internal-hero-overlay"></div>
+    <div class="container">
+      <div class="internal-hero-content" data-aos="fade-up">
+        <h1 class="internal-hero-title">Contact Us</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-down" style="transform: rotate(-90deg); font-size: 10px;"></i>
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Body Section -->
+  <section class="section-padding bg-light-section">
+    <div class="container">
+      <div class="contact-split">
+        
+        <!-- Left Side: Contact Form -->
+        <div class="form-card" data-aos="fade-right">
+          <h3 class="form-title">Send Us a Message</h3>
+          
+          <!-- Success Message Card -->
+          <div class="success-message-card" id="contactSuccessCard">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Thank you! We will contact you within 2 hours.</span>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="contactName" class="form-label">Full Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Enter your full name">
+              <span class="form-error-msg"></span>
+            </div>
+
+            <!-- Mobile Number -->
+            <div class="form-group">
+              <label for="contactMobile" class="form-label">Mobile Number *</label>
+              <input type="tel" id="contactMobile" class="form-control" placeholder="Enter 10-digit mobile number">
+              <span class="form-error-msg"></span>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email Address</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="Enter your email address">
+              <span class="form-error-msg"></span>
+            </div>
+
+            <!-- Service Type Selection -->
+            <div class="form-group">
+              <label for="contactService" class="form-label">Service Type</label>
+              <select id="contactService" class="form-control">
+                <option value="Airport Transfer">Airport Transfer</option>
+                <option value="Outstation Trip">Outstation Trip</option>
+                <option value="City Ride">City Ride</option>
+                <option value="Wedding Cab">Wedding Cab</option>
+                <option value="Corporate Travel">Corporate Travel</option>
+                <option value="Tour Package">Tour Package</option>
+              </select>
+            </div>
+
+            <!-- Message Box -->
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea id="contactMessage" class="form-control" rows="4" placeholder="How can we help you?"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Right Side: Info cards & map -->
+        <div data-aos="fade-left">
+          
+          <!-- Card 1 -->
+          <div class="contact-card-info">
+            <i class="fa-solid fa-location-dot contact-card-info-icon"></i>
+            <div class="contact-card-info-content">
+              <h4>Our Location</h4>
+              <p>Kukatpally, Hyderabad — 500072</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="contact-card-info">
+            <i class="fa-solid fa-phone contact-card-info-icon"></i>
+            <div class="contact-card-info-content">
+              <h4>Call / WhatsApp</h4>
+              <p><a href="tel:+917981232371">+91 7981232371</a></p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="contact-card-info">
+            <i class="fa-solid fa-clock contact-card-info-icon"></i>
+            <div class="contact-card-info-content">
+              <h4>Working Hours</h4>
+              <p>24 Hours, All Days including Holidays</p>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-container">
+            <iframe 
+              src="https://maps.google.com/maps?q=Kukatpally,Hyderabad&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="240" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 -->
+        <div class="footer-brand">
+          <div class="nav-logo footer-logo">
+            <div class="nav-logo-circle">JC</div>
+            <span class="nav-logo-text">Jolly Cabs</span>
+          </div>
+          <p class="footer-brand-text">Ride with confidence. Ride with Jolly Cabs.</p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="fleet.html" class="footer-link">Fleet</a></li>
+            <li><a href="outstation.html" class="footer-link">Outstation</a></li>
+            <li><a href="airport.html" class="footer-link">Airport Transfer</a></li>
+            <li><a href="srisailam.html" class="footer-link">Srisailam Tour</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="airport.html" class="footer-link">Airport Transfer</a></li>
+            <li><a href="outstation.html" class="footer-link">Outstation Trips</a></li>
+            <li><a href="services.html" class="footer-link">Wedding Cabs</a></li>
+            <li><a href="services.html" class="footer-link">Corporate Travel</a></li>
+            <li><a href="services.html" class="footer-link">Tour Packages</a></li>
+            <li><a href="services.html" class="footer-link">City Rides</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Kukatpally, Hyderabad — 500072</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+917981232371">+91 7981232371</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@jollycabs.in">info@jollycabs.in</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Available 24 / 7 — All days</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span class="footer-copy">Copyright 2024 Jolly Cabs. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="contact.html" class="footer-bottom-link">Privacy Policy</a>
+          <span class="footer-copy">|</span>
+          <a href="contact.html" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917981232371?text=Hi%20Jolly%20Cabs%2C%20I%20want%20to%20book%20a%20cab" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+  <script src="js/main.js?v=1.2"></script>
+</body>
+</html>
