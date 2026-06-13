@@ -2550,7 +2550,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Grid layout inside body: Details left, Pill button right */
   .car-card-body {
     display: grid !important;
-    grid-template-columns: 1fr auto !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
     grid-template-rows: auto auto !important;
     gap: 2px 12px !important;
     flex-grow: 1 !important;
@@ -2563,13 +2563,14 @@ h1, h2, h3, h4, h5, h6 {
     grid-row: 1 !important;
     display: flex !important;
     align-items: center !important;
-    gap: 6px !important;
+    flex-wrap: wrap !important;
+    gap: 4px 6px !important;
     margin: 0 !important;
     width: 100% !important;
   }
 
   .car-name {
-    font-size: 15px !important;
+    font-size: 14px !important;
     font-weight: 700 !important;
     color: var(--text-dark) !important;
     margin: 0 !important;
